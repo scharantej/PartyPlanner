@@ -1,0 +1,30 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>Guest List</title>
+</head>
+<body>
+<h1>Guest List</h1>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Email</th>
+<th>Special Requests</th>
+</tr>
+</thead>
+<tbody>
+{% for guest in guests %}
+<tr>
+<td>{{ guest.name }}</td>
+<td>{{ guest.email }}</td>
+<td>{{ guest.special_requests }}</td>
+</tr>
+{% endfor %}
+</tbody>
+</table>
+</body>
+</html>
+
+
